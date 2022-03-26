@@ -1,0 +1,20 @@
+server:
+  port: 8081
+spring:
+  servlet:
+    multipart:
+      max-file-size: 100MB
+      max-request-size: 1000MB
+  application:
+    name: factor-dongbao-comomon
+  main:
+    allow-bean-definition-overriding: true
+  messages:
+    basename: i18n/messages
+    cache-seconds: -1
+    encoding: utf-8
+  datasource:
+    username: ${db.username:root}
+    password: ${db.password:669988}
+    url: jdbc:mysql://${db.host:120.55.49.181}:${db.port:3306}/mybatisPlus?characterEncoding=utf-8&useSSL=false&serverTimezone=GMT%2B8
+    #
